@@ -1,7 +1,7 @@
 html{
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: linear-gradient(to right , rgb(207, 143, 143), red ,rgb(116, 10, 10));
+    background: linear-gradient(to top , rgb(223, 87, 87), rgb(221, 17, 17) ,rgb(190, 32, 32));
 }  
   h1 {
     font-size: 60px;
@@ -99,14 +99,12 @@ img {
 
 
 .carousel-container {
-  height: 350px;
+  /*height: 350px;*/ 
     width: auto;
     padding: 20px;
 }
+
 .carousel {
-  /*position: relative;
-  display: flex;
-  transition: left 0.5s;*/
   margin-top: 25px;
 }
 
@@ -186,8 +184,10 @@ footer{
   margin: 0 10px; /* Adiciona uma margem de 10 pixels na esquerda e direita das imagens */
 }
 
-
- 
-
-
-
+input[type="submit"] {
+  background-color: rgb(10, 10, 10);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}

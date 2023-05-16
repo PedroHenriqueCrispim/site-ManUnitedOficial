@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login/Cadastro</title>
+</head>
+<body>
+    <div class="menu">
+       
+        <nav>
+            <a href="index.html"><img src="imagem/imagens2.png" alt="logo do United" id="logo"> </a>
+            <ul>
+                <li><a href="index.html">História do clube</a></li>
+                <li><a href="loja.html">Shop</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li ><a href="loginCadastro.html" id="login">Login/Cadastro</a></li>
+            </ul>
+         </nav>
+    </div>  
+<br><br>
+    <style>
+        body {
+         
+          font-family: Arial, sans-serif;
+        }
+        #container {
+        margin: 0 auto;
+        width: 80%;
+        background-color: #FFFFFF;
+        border-radius: 100px;
+        padding: 20px;
+        box-shadow: 2px 2px 5px #CCCCCC;
+
+        }
+        h1 {
+          color: #DC143C;
+          text-align: center;
+        }
+        form {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        label, input {
+          margin: 10px;
+          width: 50%;
+        }
+        input[type="submit"] {
+          margin-top: 20px;
+          background-color: #DC143C;
+          color: #FFFFFF;
+          border: none;
+          border-radius: 25px;
+          padding: 10px 20px;
+          font-size: 16px;
+          cursor: pointer;
+        }
+        input[type="submit"]:hover {
+          background-color: #B22222;
+        }
+      </style>
+<br><br><br>
+      <div id="container">
+        <h1>Manchester United</h1>
+        <h2>Faça login ou cadastre-se para acessar</h2>
+        <form>
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required>
+  
+          <label for="senha">Senha:</label>
+          <input type="password" id="senha" name="senha" required>
+  
+          <input type="submit" value="Entrar">
+        </form>
+        <p>Não tem uma conta? <a href="cadastre.html">Cadastre-se</a></p>
+      </div>
+      <script>
+        
+        document.querySelector('form').addEventListener('submit', function(event) {
+         
+          event.preventDefault();
+  
+         
+          const email = document.querySelector('#email').value;
+          const senha = document.querySelector('#senha').value;
+  
+        
+          if (email === '' || senha === '') {
+           
+            alert('Por favor, preencha todos os campos!');
+          } else {
+           
+            alert('Cadastro realizado com sucesso!');
+          }
+        });
+      </script>
+      
+<br><br>
+
+    <footer>
+        <p>@2023-Todos os direitos reservados.</p>
+     </footer>
+
+</body>
+</html>
